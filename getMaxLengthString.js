@@ -10,6 +10,9 @@ function getMaxLengthString(arrayOfString) {
     if (arrayOfString[i].length>maxlength) {
       maxlength=arrayOfString[i].length
       maxlength_i=i
+      for(let m = 0;m <= equal_maxlength.length; m++){
+        equal_maxlength.pop()
+      }
     }
     else if(arrayOfString[i].length==maxlength){
       equal_maxlength.push(arrayOfString[i])
